@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>TML and Hotel Terrra Housing</title>
+<script type="text/javascript" language="JavaScript">
+<!--
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+function subForm() {
+    $.ajax({
+        url:'file:///C:/Users/trinidad.thalasselis/Documents/Housing%20FORM/html/DEFINITIVO.html'
+        type:'post',
+        data: $("#myForm").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted")
+        },
+        error: function(){
+          alert("There was an error")
+        }
+    });
+}
+$.ajax({
+url: 'file:///C:/Users/trinidad.thalasselis/Documents/Housing%20FORM/html/DEFINITIVO.html'
+}
+//-->
+</script></head>
+<center><div style="width: 60%">
+<center><div class="container" style="background-color: #F5F5DC; box-sizing: content-box; justify-content: left; width:auto; margin: 0; margin-left: auto; margin-right: auto; margin-top: auto; padding: 5px; position: relative"><img src="../getlogofilebyid.png" style="height: auto; width: 70%; object-fit:cover;"></div>
+<center><h1 style="align-content: center; background-color: transparent; border-bottom-color: #FAEBD7; color: #F5F5DC; font-family: Myanmar Text; font-size: xx-large; font-weight: 600"> Employee Housing Ticket Submission Form</h1>
+
+<body style="background-image:url('../istockphoto-1544449856-612x612.jpg')">
+<table>
+<div class="container" style="background-color: #F5F5DC; padding: 20px; width: 80%">
+<form action="Success Submitting.html" method="post" name="Housing Form" id="myForm">
+
+<p style="color: #1C3F01; font-family: Myanmar Text; font-size: 15px; font-weight: 700; justify-self: auto;">Date</p>
+<input type="date" name="Date" style="display: inline-block; width: 80%; box-sizing: border-box;">
+<br>
+<br>
+<p style="color: #1C3F01; font-family: Myanmar Text; font-size: 15px; font-weight: 700">Issue Title</p>
+<input type="text" name="Issue Title" style= "display: inline-block; width: 80%; box-sizing: border-box">
+<br>
+<br>
+<p style="color: #1C3F01; font-family: Myanmar Text; font-size: 15px; font-weight: 700; justify-self: auto;">Issue</p>
+  <label for="issue"></label>
+  <input list="issues" name="Issue" id="issue" style= "display: inline-block; width: 80%; box-sizing: border-box">
+  <datalist id="issues">
+  <option value="Maintenance/Repairs">
+    <option value="Check In Issue">
+    <option value="Check Out Issue">
+    <option value="Noise Disturbance">
+    <option value="Conflict Situation">
+    <option value="Disturbance on Property">
+    <option value="Cleanliness of Common Spaces">
+    <option value="Other">
+  </datalist>
+<p style="color: #1C3F01; font-family: Myanmar Text; font-size: 13px">If choosing "Other" please leave a developed description below</p>
+<textarea name="Description" rows="7" style= "display: inline-block; width: 80%; box-sizing: border-box"></textarea>
+<br>
+<br>
+<p style="color: #1C3F01; font-family: Myanmar Text; font-size: 15px; font-weight: 700; justify-self: auto;">Housing</p>
+  <label for="housing"></label>
+  <input list="housings" name="Housing" id="housing"  style= "display: inline-block; width: 80%; box-sizing: border-box">
+  <datalist id="housings">
+  <option value="Stagecoach">
+    <option value="Hotel Terra">
+    <option value="Teton Mountain Lodge">
+    <option value="Teton Gables Motel">
+    <option value="Teton Gables Apartments">
+    <option value="Stacy">
+    <option value="Pearl Street">
+    <option value="Victor">
+  </datalist>
+<br>
+<br>
+<p style="color: #1C3F01; font-family: Myanmar Text; font-size: 15px; font-weight: 700; justify-self: auto;">Name of anyone you have already tried to contact</p>
+<input type="text" name="Name of anyone you have already tried to contact" style= "display: inline-block; width: 80%; box-sizing: border-box">
+<br>
+<br>
+<p style="color: #1C3F01; font-family: Myanmar Text; font-size: 15px; font-weight: 700; justify-self: auto;">First and Last Name</p>
+<input type="text" name="First and Last Name" style= "display: inline-block; width: 80%; box-sizing: border-box">
+<br>
+<br>
+<p style="color: #1C3F01; font-family: Myanmar Text; font-size: 15px; font-weight: 700; justify-self: auto;">Email</p>
+<input type="text" name="Email" style= "display: inline-block; width: 80%; box-sizing: border-box">
+<br>
+<br>
+<p style="color: #1C3F01; font-family: Myanmar Text; font-size: 15px; font-weight: 700; justify-self: auto;">Phone number</p>
+<input type="number" name="Phone number" style= "display: inline-block; width: 80%; box-sizing: border-box">
+<br>
+<br>
+<p style="color: #1C3F01; font-family: Myanmar Text; font-size: 15px; font-weight: 700; justify-self: auto;">Requested follow up date</p>
+<input type="date" name="Requested follow up date" style="display: inline-block; width: 80%; box-sizing: border-box">
+<br>
+<br>
+<center><input type="submit" value="Submit" style="align-content: center; align-items: center; align-self: center; background-color: #384727; box-shadow: none; color: #F5F5DC; font-family: Myanmar Text; font-size: medium; font-weight: 200; min-height: 30px; min-width: 80px" onSubmit="subForm()">
+
+</div>
+</form></body>
+</html>
